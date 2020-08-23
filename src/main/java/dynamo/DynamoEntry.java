@@ -119,11 +119,11 @@ public class DynamoEntry {
             return false;
         }
         DynamoEntry that = (DynamoEntry) o;
-        return Objects.equals(getHashKey(), that.getHashKey()) &&
-            Objects.equals(getSortKey(), that.getSortKey()) &&
-            Objects.equals(getInstitution(), that.getInstitution()) &&
-            Objects.equals(getUsername(), that.getUsername()) &&
-            Objects.equals(getComments(), that.getComments());
+        return Objects.equals(getHashKey(), that.getHashKey())
+            && Objects.equals(getSortKey(), that.getSortKey())
+            && Objects.equals(getInstitution(), that.getInstitution())
+            && Objects.equals(getUsername(), that.getUsername())
+            && Objects.equals(getComments(), that.getComments());
     }
 
     @Override
